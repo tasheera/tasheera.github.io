@@ -13,3 +13,11 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+    // Skills
+    $('.skill').waypoint(function () {
+      $('.progress .progress-bar').each(function () {
+          $(this).css("width", $(this).attr("aria-valuenow") + '%');
+      });
+  }, {offset: '80%'});
